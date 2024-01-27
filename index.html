@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HockeySite</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font family  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- style  -->
+
+    <style>
+        .primary-font {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="primary-font">
+    <header class="container mx-auto mt-14">
+
+        <!-- nav starts here  -->
+        <nav>
+            <div class="navbar ">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+
+                        </ul>
+                    </div>
+                    <a class=" lg:text-3xl text-2xl font-extrabold">Hockey<span class="text-red-600">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-[#424247] text-[16px] font-bold">
+                        <li><a class="text-red-600 text-[16px] font-bold">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-end  sm:mr-2">
+                    <button class=" btn btn-ghost btn-circle  hidden sm:block ">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                    </button>
+                    <a
+                        class=" lg:px-6 px-3 lg:py-3 py-2 rounded-md text-white lg:text-[20px] text-[18px] font-bold bg-[#FF4240] hover:bg-red-400 lg:ml-12 sm:mr-2">Get
+                        Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- nav ends here  -->
+
+
+        <!-- hero carousel starts here  -->
+        <div class="hero mt-14 ">
+            <!-- carousel-1  -->
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full h-3/4" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4"
+                            class="btn btn-circle lg:absolute lg:top-32 bg-[#131318] text-white lg:text-2xl ">❮</a>
+                        <a href="#slide2"
+                            class="btn btn-circle lg:absolute lg:left-14 lg:top-32 bg-[#131318] text-white lg:text-2xl ">❯</a>
+                    </div>
+                </div>
+
+                <!-- carousel-2  -->
+
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full h-3/4" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1"
+                            class="btn btn-circle lg:absolute lg:top-32 bg-[#131318] text-white lg:text-2xl ">❮</a>
+                        <a href="#slide3"
+                            class="btn btn-circle lg:absolute lg:left-14 lg:top-32 bg-[#131318] text-white lg:text-2xl ">❯</a>
+                    </div>
+                </div>
+
+                <!-- carousel-3  -->
+
+
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full h-3/4" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2"
+                            class="btn btn-circle lg:absolute lg:top-32 bg-[#131318] text-white lg:text-2xl ">❮</a>
+                        <a href="#slide4"
+                            class="btn btn-circle lg:absolute lg:left-14 lg:top-32 bg-[#131318] text-white lg:text-2xl ">❯</a>
+                    </div>
+                </div>
+
+                <!-- carousel-4  -->
+
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="w-full h-3/4" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3"
+                            class="btn btn-circle lg:absolute lg:top-32 bg-[#131318] text-white lg:text-2xl ">❮</a>
+                        <a href="#slide1"
+                            class="btn btn-circle lg:absolute lg:left-14 lg:top-32 bg-[#131318] text-white lg:text-2xl ">❯</a>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+        <!-- <div class="bg-black lg:w-[500px] w-80 lg:absolute rounded-md lg:p-8 space-y-4 lg:mt-[200px] lg:right-16 ">
+            <h1 class="lg:text-2xl text-xl font-extrabold text-white">Meet all the heroes from the field</h1>
+            <p class="text-[16px] font-medium text-[#FFFFFF66]">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p> -->
+
+
+
+        <!-- hero carousel ends here  -->
+    </header>
+
+    <main class="container mx-auto mt-20">
+
+        <!-- Professional Hockeys starts here  -->
+        <section class="progressbar">
+            <h1 class="text-center lg:text-4xl text-[22px] font-extrabold pb-6 max-sm:mx-6">Professional Hockeys Club
+            </h1>
+            <p class="text-center text-[#13131899] text-[16px] font-medium mb-8 max-sm:mx-10">Dit amet consectetur.
+                Condimentum
+                dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+
+            <div class="mt-12 grid grid-cols-1 lg:grid-cols-4 gap-8 max-sm:mx-10">
+                <div class="text-center">
+                    <div class="radial-progress mb-6" style="--value:87;color: red;" role="progressbar"><span
+                            class="text-black text-xl font-extrabold p-10">87%</span></div>
+
+                    <h4 class="text-xl font-semibold">Prayer Facility</h4>
+                    <p class="text-[16px] font-normal text-[#13131899]">Amet consectetur. Condimentum dignissim
+                        adipiscing .</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="radial-progress mb-6" style="--value:95;color: #49D293;" role="progressbar"><span
+                            class="text-black text-xl font-extrabold p-10">95%</span></div>
+
+                    <h4 class="text-xl font-semibold">Experienced Coach</h4>
+                    <p class="text-[16px] font-normal text-[#13131899]">Amet consectetur. Condimentum dignissim
+                        adipiscing .</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="radial-progress mb-6" style="--value:90;color: #FFB546;" role="progressbar"><span
+                            class="text-black text-xl font-extrabold p-10">90%</span></div>
+
+                    <h4 class="text-xl font-semibold">Prayer Facility</h4>
+                    <p class="text-[16px] font-normal text-[#13131899]">Amet consectetur. Condimentum dignissim
+                        adipiscing .</p>
+                </div>
+
+                <div class="text-center">
+                    <div class="radial-progress mb-6" style="--value:80;color: #4C8DF1;" role="progressbar"><span
+                            class="text-black text-xl font-extrabold p-10">80%</span></div>
+
+                    <h4 class="text-xl font-semibold">Training Ground</h4>
+                    <p class="text-[16px] font-normal text-[#13131899]">Amet consectetur. Condimentum dignissim
+                        adipiscing .</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Hockeys ends here -->
+
+        <!-- program section starts here  -->
+        <section class="program">
+            <div class="text-center my-32">
+                <h5 class="lg:text-4xl text-xl font-extrabold mb-6 sm:mx-10">Program Sections</h5>
+                <p class="text-[16px] font-medium max-sm:mx-5">Dit amet consectetur. Condimentum dignissim adipiscing
+                    aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+            </div>
+
+
+            <!-- card starts here  -->
+            <!-- <div class="grid lg:grid-cols-4 grid-cols-1 gap-y-6 justify-evenly">
+                <div style="background-image: url(Images/2.png);background-repeat: no-repeat; background-size: cover;" class="cards relative col-span-2">
+                    <div class="overlay absolute  rounded-lg lg:p-5 lg:top-12 top-12 lg:px-8 p-2 lg:left-56 left-10">
+                        <h4 class="lg:text-3xl text-xl font-extrabold text-white ">Junior Program</h4>
+                        <p class="lg:text-[16px] text-[12px] font-medium w-60 text-white lg:pt-4 pt-1 lg:pb-4 pb-2">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <a class="border-[1px] border-solid border-red-500 lg:text-xl text-xs lg:px-6 px-3 py-2 text-white bg-red-500 rounded" href="#">Register Now!</a>
+                    </div>
+                </div>
+
+
+                <div class="cards relative col-span-2">
+                    <img class="lg:h-[335px] h-60 mx-auto lg:w-[573px] w-72" src="Images/2.png" alt="">
+                    <div class="overlay absolute bg-[#13131846] rounded-lg lg:p-5 lg:top-24 top-12 p-2 left-10">
+                        <h4 class="lg:text-3xl text-xl font-extrabold text-white ">Junior Program</h4>
+                        <p class="lg:text-[16px] text-[12px] font-medium w-60 text-white lg:pt-4 pt-1 lg:pb-4 pb-2">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit <br>
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet <br> nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <a class="border-[1px] border-solid border-red-500 text-xs lg:px-6 px-3 py-2 text-white bg-red-500 rounded" href="#">Register Now!</a>
+                    </div>
+                </div>
+
+                
+
+
+            </div> -->
+
+
+
+            <div class="grid lg:grid-cols-4 grid-cols-1 max-sm:gap-3">
+                <div class="lg:col-span-2  lg:w-[700px] lg:h-[338px] card w-96 bg-base-100 shadow-xl image-full">
+                    <div
+                        style="background-image: url(Images/2.png);background-repeat: no-repeat; background-size: cover;">
+
+                        <div class="card-body">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-2 lg:w-[700px] lg:h-[338px] card w-96 image-full">
+                    <div
+                        style="background-image: url(Images/2.png);background-repeat: no-repeat; background-size: cover;">
+
+                        <div class="card-body">
+                            <h2 class="card-title">Shoes!</h2>
+                            <p>If a dog chews shoes whose shoes does he choose?</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-primary">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-4 lg:mt-7 lg:w-[1170px] mx-auto lg:h-[450px] card w-96 image-full">
+                    <div
+                        style="background-image: url(Images/4.png);background-repeat: no-repeat; background-size: cover;">
+                        <h1 class="text-3xl font-extrabold">Professional Program</h1>
+                        <p class="text-[16px] font-medium text-white">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- card ends here  -->
+        </section>
+        <!-- program section ends here  -->
+
+    </main>
+
+    <footer></footer>
+
+</body>
+
+</html>
